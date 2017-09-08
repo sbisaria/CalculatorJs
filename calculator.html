@@ -20,12 +20,9 @@
 		                <li id=""><a href="">Help</a></li>
 		            </ul>
 				</div>
-				<div class="row">
-					<form action="calculator_submit" method="get" accept-charset="utf-8" id="myform">
-						<div class="row">
-				            <input type="text" class="form-control" id="txt" pattern="[0-9]">				         
-				        </div>
-						
+				<div class="container-fluid">
+					<div id="main">
+				            <input type="text" class="form-control" id="txt" pattern="[0-9]">				         					
 				        <div class="row margin">
 				        	<button type="button" id="c" onClick="onAllClearClick('c')" class="btn btn-lg btn-default">C</button>
 				        	<button type="button" id="ce" onClick="onClearClick('ce')" class="btn btn-lg btn-default">CE</button>
@@ -58,7 +55,7 @@
 								<button type="button" onClick="onEqualClick()" class="btn btn-default btn-lg">=</button>
 							</div>
 						</div>
-					</form>
+					</div>
 				</div>
 			</div>
 		</div>	

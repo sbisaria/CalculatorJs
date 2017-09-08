@@ -4,7 +4,7 @@ function onButtonClick(str){
 }
 
 function onAllClearClick(){
-	document.getElementById("myform").reset();
+	document.getElementById("main").reset();
 }
 function onClearClick(){
 	txtElement.value=txtElement.value.substring(0,txtElement.value.length-1);
