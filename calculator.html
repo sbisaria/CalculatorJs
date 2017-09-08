@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+<body>
+<div class="container main-wrapper">
+		<div class="col-md-4 col-md-offset-4">
+			<div class="jumbotron border"><h4>Calculator</h4>
+				<div class="row">
+					<ul class="nav nav-pills">
+		                <li id=""><a href="">View</a></li>
+		                <li id=""><a href="">Edit</a></li>
+		                <li id=""><a href="">Help</a></li>
+		            </ul>
+				</div>
+				<div class="container-fluid">
+					<form id="main">
+				            <input type="text" class="form-control" id="txt" pattern="[0-9]">				         					
+				        <div class="row margin">
+				        	<button type="button" id="c" onClick="onAllClearClick('c')" class="btn btn-lg btn-default">C</button>
+				        	<button type="button" id="ce" onClick="onClearClick('ce')" class="btn btn-lg btn-default">CE</button>
+				        	<button type="button" id="add" onClick="onButtonClick('+')" class="btn btn-lg btn-default">+</button>
+				        </div>
+				        <div class="row margin">
+							<button type="button" id="7" onClick="onButtonClick('7')" class="btn btn-default btn-lg">7</button>
+							<button type="button" id="8" onClick="onButtonClick('8')" class="btn btn-default btn-lg">8</button>
+							<button type="button" id="9" onClick="onButtonClick('9')" class="btn btn-default btn-lg">9</button>
+							<button type="button" id="minus" onClick="onButtonClick('-')" class="btn btn-default btn-lg">-</button>
+						</div>
+						<div class="row margin">
+							<button type="button" id="4" onClick="onButtonClick('4')" class="btn btn-default btn-lg">4</button>
+							<button type="button" id="5" onClick="onButtonClick('5')" class="btn btn-default btn-lg">5</button>
+							<button type="button" id="6" onClick="onButtonClick('6')" class="btn btn-default btn-lg">6</button>
+							<button type="button" id="multiply" onClick="onButtonClick('*')" class="btn btn-default btn-lg">*</button>
+						</div>
+						<div class="row margin">
+							<button type="button" id="1" onClick="onButtonClick('1')" class="btn btn-default btn-lg">1</button>
+							<button type="button" id="2" onClick="onButtonClick('2')" class="btn btn-default btn-lg">2</button>
+							<button type="button" id="3" onClick="onButtonClick('3')" class="btn btn-default btn-lg">3</button>
+							<button type="button" id="divide" onClick="onButtonClick('/')" class="btn btn-default btn-lg">/</button>
+						</div>
+						
+						<div class="row margin">
+							<div class="col-md-4">
+								<button type="button" onClick="onButtonClick('0')" class="btn btn-lg btn-default">0</button>
+							</div>
+							<div class="col-md-2">
+								<button type="button" onClick="onEqualClick()" class="btn btn-default btn-lg">=</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>	
+</div>
+</body>
+</html>
